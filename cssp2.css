@@ -128,9 +128,10 @@ html,body{
 #name{
     position: absolute;
     rotate: -90deg;
-    top: 0%;
+    top: 90%;
     bottom: 0%;
-    left: 40%;
+    left: -10%;
+    transform-origin: 0 0;
 }
 #name h4{
     font-size: 26px;
@@ -141,24 +142,29 @@ html,body{
     #main{
         justify-content: space-between;
         width: 100%;
+        padding: 70px 40px;
     }
     #left{
         width: 45%;
         height: 100%;
        display: flex;
        flex-direction: column;
-
+       padding: 0px 0px;
+       margin: 0px;
     }
     #left h1{
-        padding-left: 40px;
+        padding-left:0px;
         font-size: 10vw;
     }
     #bottom-left{
         width: 100%;
         height: 20%;
     }
+    #colors{
+        margin: 0px;
+    }
     #colors h4{
-        margin-left: 10px;
+        margin: 0px;
         font-size: 15px;
     }
     #c1{
@@ -174,10 +180,10 @@ html,body{
         background-color: rgb(16, 182, 182);
     }
     #details{
-        margin-left: 8.5vw;
+        margin-left: 0px;
         width: 100%;
-        height: 30%;
-        margin-top: 50px;
+        height: 20%;
+        margin-top: 30px;
         color: rgb(56, 52, 52);
         font-family: work sans;
         font-weight: 500;
@@ -185,7 +191,7 @@ html,body{
     #details p{
         line-height: 12px;
         font-weight: 800;
-        width: 60%;
+        width: 100%;
         font-size: 10px;
     }
     #details h3{
@@ -197,6 +203,7 @@ html,body{
         width: 55%;
         height: 80%;
         position: relative;
+
     }
     #price{
         font-size: 15px;
@@ -239,6 +246,8 @@ html,body{
     }
     #name{
         position: absolute;
+        top: 80%;
+        left: -15%;
     }
     #name h4{
         font-size: 18px;
