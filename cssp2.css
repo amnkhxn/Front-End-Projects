@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 150px 40px 0px 40px;
+}
+#left{
+    width: 45%;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-bottom: 50px;
+}
+#left h1{
+    padding-left: 150px;
+    font-size: 4.8vw;
+    font-family: work sans;
+    font-weight: 540;
+    color: rgb(56, 52, 52);
+    line-height: 6vw;
+}
+#bottom-left{
+    width: 100%;
+    height: 40%;
+}
+#colors{
+    width: fit-content;
+    padding: 0px 5px;
+    height: 5vh;
+    border-radius: 4vw;
+    border: 2px solid rgb(56, 52, 52);
+    margin-left: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(56, 52, 52);
+    font-family: work sans;
+    gap: 10px;
+}
+#colors h4{
+    font-size: .9vw;
+}
+#c1{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: rgb(88, 23, 23);
+    border-radius: 50%;
+}
+#c2{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background-color: rgb(16, 182, 182);
+}
+#details{
+    margin-left: 8.5vw;
+    width: 100%;
+    height: 30%;
+    margin-top: 100px;
+    color: rgb(56, 52, 52);
+    font-family: work sans;
+    font-weight: 500;
+}
+#details p{
+    line-height: 1.2vw;
+    font-weight: 530;
+    width: 60%;
+}
+#details h3{
+    font-size: 1.1vw;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#right{
+    width: 27%;
+    height: 85%;
+    position: relative;
+}
+#price{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 10px 10px 10px;
+    font-family: work sans;
+    font-weight: 600;
+}
+#rating{
+    font-size: 15px;
+    display: flex;
+    gap: 5px;
+}
+#right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#cart{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(26, 24, 24);
+    top: 30%;
+    left: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#cart h4{
+    font-family: work sans;
+    font-weight: 300;
+}
+#name{
+    position: absolute;
+    rotate: -90deg;
+    top: 0%;
+    bottom: 0%;
+    left: 40%;
+}
+#name h4{
+    font-size: 26px;
+    font-family: work sans;
+    color: rgb(56, 52, 52);
+}
+@media (max-width:600px) {
+    #main{
+        justify-content: space-between;
+        width: 100%;
+    }
+    #left{
+        width: 45%;
+        height: 100%;
+       display: flex;
+       flex-direction: column;
+
+    }
+    #left h1{
+        padding-left: 40px;
+        font-size: 10vw;
+    }
+    #bottom-left{
+        width: 100%;
+        height: 20%;
+    }
+    #colors h4{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    #c1{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(88, 23, 23);
+        border-radius: 50%;
+    }
+    #c2{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(16, 182, 182);
+    }
+    #details{
+        margin-left: 8.5vw;
+        width: 100%;
+        height: 30%;
+        margin-top: 50px;
+        color: rgb(56, 52, 52);
+        font-family: work sans;
+        font-weight: 500;
+    }
+    #details p{
+        line-height: 12px;
+        font-weight: 800;
+        width: 60%;
+        font-size: 10px;
+    }
+    #details h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    #right{
+        width: 55%;
+        height: 80%;
+        position: relative;
+    }
+    #price{
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0px 10px 10px 10px;
+        font-family: work sans;
+        font-weight: 400;
+    }
+    #rating{
+        font-size: 10px;
+        display: flex;
+        gap: 5px;
+    }
+    #right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #cart{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: rgb(26, 24, 24);
+        top: 30%;
+        left: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    #cart h4{
+        font-family: work sans;
+        font-weight: 300;
+        font-size: 10px;
+    }
+    #name{
+        position: absolute;
+    }
+    #name h4{
+        font-size: 18px;
+        font-family: work sans;
+        color: rgb(56, 52, 52);
+    }
+}
